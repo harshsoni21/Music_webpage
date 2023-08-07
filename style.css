@@ -17,6 +17,7 @@ body {
 }
 
 header {
+    /* position: relative; */
     width: 85%;
     height: 95%;
     /* border: 1px solid #fff; */
@@ -315,7 +316,7 @@ header .master_play .vol input{
  header .master_play .vol .vol_bar{
     position: absolute;
     background: #36e2ec;
-    width: 0%;
+    width: 100%;
     height: 100%;
     top: 0;
     transition: 1s linear;
@@ -326,7 +327,7 @@ header .master_play .vol input{
     height: 5px;
     background: #36e2ec;
     border-radius: 50%;
-    left: 0%;
+    left: 100%;
     top: -1px;
     transition: 1s linear;
  }
@@ -406,6 +407,50 @@ header .master_play .vol input{
    backdrop-filter: blur(5px);
    z-index: -1;
  }
+ header .song_side nav .search .search_results{
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  /* border: 1px solid white; */
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: auto;
+}
+header .song_side nav .search .search_results::-webkit-scrollbar{
+ 
+ display: none;
+  }
+header .song_side nav .search .search_results .card{
+    width: 100%;
+    height: 45px;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: rgb(184, 184, 184,.1);
+    margin-bottom: 5px;
+    text-decoration: none;
+    display: none;
+  }
+  header .song_side nav .search .search_results .card img{
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  }
+  header .song_side nav .search .search_results .card .content{
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid white; */
+    padding: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+  }
+  header .song_side nav .search .search_results .card .content .subtitle{
+    font-size: 11px;
+    color: #a4a8b4;
+    font-weight: 500;
+  }
  header .song_side nav .search .bi{
     font-size: 13px;
     padding: 3px 0px 0px 10px;
@@ -418,20 +463,21 @@ header .master_play .vol input{
     color: #fff;
     font-size: 12px;
  }
- header .song_side nav .user{
+
+ /* header .song_side nav .user{
     position: relative;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     cursor: pointer;
- }
- header .song_side nav .user img{
+ } */
+ /* header .song_side nav .user img{
     position: absolute;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     box-shadow: 2px 2px 8px #131312;
- }
+ } */
 
  header .song_side .content {
      width:90%;
@@ -452,6 +498,7 @@ header .master_play .vol input{
     margin: 5px;
  }
  header .song_side .content .buttons{
+    /* display: flex; */
     margin-top: 15px;
  }
  header .song_side .content .buttons button{
