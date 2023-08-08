@@ -1,4 +1,4 @@
-const music = new Audio('audio/arjit song and img/arjit_audio/1.mp3');
+const music = new Audio('Still Rollin.mp3');
 // music play();
 // making array  
 
